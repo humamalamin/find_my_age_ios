@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Find_My_Age" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="zEM-gI-gHk">
+                                <rect key="frame" x="0.0" y="94" width="414" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="216" id="bnP-ca-K1M"/>
+                                    <constraint firstAttribute="height" constant="215" id="bvj-qP-OJv"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="216" id="fQC-Gt-6bY"/>
+                                </constraints>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6A-AP-7Ul">
+                                <rect key="frame" x="20" y="341" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pkV-Zq-n5v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzp-QQ-yj2">
+                                <rect key="frame" x="20" y="411" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tFj-ck-YXt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calculate my age" titleAlignment="center">
+                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="calculateMyAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pg8-nJ-2vl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hzp-QQ-yj2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4gQ-Kg-DV1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zEM-gI-gHk" secondAttribute="trailing" id="7OC-gg-ada"/>
+                            <constraint firstItem="w6A-AP-7Ul" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Cd7-h1-tqe"/>
+                            <constraint firstItem="zEM-gI-gHk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DzH-vl-ne8"/>
+                            <constraint firstItem="zEM-gI-gHk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="FG2-Sf-4ca"/>
+                            <constraint firstItem="w6A-AP-7Ul" firstAttribute="top" secondItem="zEM-gI-gHk" secondAttribute="bottom" constant="31" id="PiG-Dk-jW1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w6A-AP-7Ul" secondAttribute="trailing" constant="20" id="XS2-CA-fNK"/>
+                            <constraint firstItem="w6A-AP-7Ul" firstAttribute="top" secondItem="zEM-gI-gHk" secondAttribute="bottom" constant="20" id="ar4-n7-zWp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hzp-QQ-yj2" secondAttribute="bottom" constant="318" id="crR-7s-qle"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hzp-QQ-yj2" secondAttribute="trailing" constant="20" id="d6y-bm-8bv"/>
+                            <constraint firstItem="w6A-AP-7Ul" firstAttribute="top" secondItem="zEM-gI-gHk" secondAttribute="bottom" constant="31" id="hs8-DO-OLZ"/>
+                            <constraint firstItem="hzp-QQ-yj2" firstAttribute="top" secondItem="w6A-AP-7Ul" secondAttribute="bottom" constant="105" id="mcP-Wy-g2Q"/>
+                            <constraint firstItem="hzp-QQ-yj2" firstAttribute="top" secondItem="w6A-AP-7Ul" secondAttribute="bottom" constant="20" id="rcg-oN-sKf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="w6A-AP-7Ul" id="E6a-3B-CHI"/>
+                        <outlet property="datePicker" destination="zEM-gI-gHk" id="6Wa-8u-ogT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
